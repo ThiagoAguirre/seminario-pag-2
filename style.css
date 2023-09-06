@@ -1,0 +1,885 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Montserrat;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* hamburguer */
+
+.menuHamburguer {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding-top: 20px;
+  width: 70%;
+  height: 100vh;
+  right: 0%;
+  transition: right 300ms ease-in-out;
+  background-color: white;
+}
+
+.menuHamburguer a {
+  text-decoration: none;
+  color: black;
+}
+
+.menuHamburguer button {
+  background-color: #00296b;
+  color: white;
+  border-radius: 19px;
+  width: 160px;
+  height: 38px;
+  cursor: pointer;
+  border: none;
+}
+.closed {
+  right: -100%;
+}
+#x {
+  aspect-ratio: 1/1;
+  width: 20px;
+  display: flex;
+  align-self: flex-end;
+  margin-right: 10px;
+  cursor: pointer;
+}
+#hamburguer {
+  width: 50px;
+  cursor: pointer;
+  aspect-ratio: 1/1;
+  display: none;
+  align-self: flex-end;
+  padding: 10px;
+}
+
+/* --------- Header ---------- */
+header {
+  color: white;
+  width: 100%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: linear-gradient(
+    93deg,
+    rgba(0, 41, 107, 0.65) 8.49%,
+    rgba(0, 41, 107, 0.94) 87.2%
+  );
+}
+nav {
+  margin-top: 10px;
+  padding-right: 50px;
+  padding-top: 10px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+}
+nav a {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+}
+
+nav a:hover {
+  opacity: 50%;
+  transition: 500ms;
+}
+
+nav button {
+  background-color: white;
+  border-radius: 19px;
+  width: 160px;
+  height: 38px;
+  cursor: pointer;
+  border: none;
+}
+
+nav button:hover {
+  opacity: 70%;
+  transition: 500ms;
+}
+.conteudoHeader {
+  width: 90%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.textoHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 498px;
+}
+.conteudoHeader img {
+  height: 280px;
+  width: 280px;
+}
+
+#subscribe {
+  background-color: white;
+  border-radius: 19px;
+  width: 160px;
+  height: 38px;
+  cursor: pointer;
+  border: none;
+}
+
+/* ---------- Sobre Nos ---------- */
+
+.sobreNos {
+  width: 90%;
+  height: auto;
+  display: flex;
+  padding-top: 40px;
+  gap: 40px;
+}
+
+.textoSobre {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: center;
+}
+
+.textoSobre h1 {
+  color: #00296b;
+  font-size: 56px;
+  font-weight: bold;
+}
+
+.teste {
+  width: 100%;
+  font-size: 20px;
+  text-align: justify;
+  text-align: center;
+}
+
+/* ---------- Data Science e IHC ---------- */
+
+.dsIHC {
+  background: rgba(122, 144, 178, 0.4);
+  margin-top: 40px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.conteudoDSIHC {
+  width: 90%;
+  display: flex;
+  gap: 30px;
+  display: flex;
+}
+
+.conteudoDSIHC h1 {
+  color: #00296b;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+}
+.programacao {
+  margin-top: 25px;
+}
+.programacao h1 {
+  padding-bottom: 30px;
+}
+.programacao div {
+  font-size: 25px;
+  text-align: center;
+}
+
+.conteudoDSIHC span {
+  font-size: 19px;
+  text-align: center;
+}
+
+.IHC {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+  padding-bottom: 40px;
+}
+
+#mackenzie_frente img {
+  margin: 20px;
+  height: 280px;
+  width: 380px;
+}
+
+/* ---------- horario ---------- */
+
+.edicoesAnteriores {
+  background-color: #84adec35;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  padding: 30px;
+  width: 100%;
+  background: rgba(48, 79, 124, 0.4);
+}
+
+
+.cardTEXTO {
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  width: 200px;
+  height: 151px;
+  color: white;
+  background-color: #00296b;
+  box-shadow: 4px 4px 4px 4px rgba(0.25, 0.25, 0.25, 0.25);
+  border: 1px red solid;
+}
+
+.cardDiv-2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 90%;
+   
+}
+
+.cardTEXTO-2 {
+  
+  text-align: center;
+  display: flexbox;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  width: 1000px;
+  height: 451px;
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+  box-shadow: 4px 4px 4px 4px rgba(0.25, 0.25, 0.25, 0.25);
+  padding: 10px 10px 10px 30px;
+  border: 1px red solid;
+}
+
+.cardTxtDiv-2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+}
+
+.cardTEXTO-3{
+  
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  width: 1000px;
+  height: 451px;
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+  box-shadow: 4px 4px 4px 4px rgba(0.25, 0.25, 0.25, 0.25);
+  padding: 10px 10px 10px 30px;
+  border: 1px red solid;
+}
+
+.edAntText {
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+  gap: 15px;
+  padding-bottom: 3%;
+}
+
+.Container {
+  padding-left: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.horario {
+  background-color: #00296b;
+  color: white;
+  border-radius: 19px;
+  height: 168px;
+  width: 200px;
+  margin-right: 50px;
+  border-radius: 20px;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.horario p {
+  font-size: 25px;
+  text-align: center;
+}
+
+.descricao {
+  text-align: center;
+  background-color: white;
+  border-radius: 20px;
+  margin-right: 50px;
+  padding: 40px 0 40px 0;
+}
+.descricao h2 {
+  font-size: 25px;
+}
+.descricao h3 {
+  font-size: 15px;
+}
+
+.descricao p {
+  display: flex;
+  align-items: center;
+  padding: 0px 60px 0px 60px;
+}
+
+.Container-dois {
+  margin-top: 3%;
+  padding-left: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.descricao-2 {
+  text-align: center;
+  background-color: white;
+  padding: 50px;
+  width: 1200px;
+  border-radius: 20px;
+  margin-right: 50px;
+  padding: 40px 0 40px 0;
+}
+
+/* ---------- Organizacao ---------- */
+.organizacao {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  padding: 30px;
+  width: 100%;
+  background: rgba(122, 144, 178, 0.4);
+}
+.cardDiv {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 90%;
+}
+.cardOrganização {
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  width: 321px;
+  height: 451px;
+  background-color: white;
+  box-shadow: 4px 4px 4px 4px rgba(0.25, 0.25, 0.25, 0.25);
+}
+.cardTxtDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+
+.lattesDiv {
+  display: flex;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.imageDiv {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.secondaryTxt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.secondaryTxt a {
+  text-decoration: none;
+  color: black;
+}
+
+.email {
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 14px;
+}
+#tituloOrganizacao {
+  color: #00296b;
+  font-size: 48px;
+  font-weight: bold;
+}
+.avatar {
+  height: 250px;
+  width: 250px;
+}
+
+.cardOrganização-2 {
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  width: 600px;
+  height: 451px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 4px 4px 4px 4px rgba(0.25, 0.25, 0.25, 0.25);
+}
+
+/* ---------- Footer ---------- */
+footer {
+  background: rgb(26, 53, 112);
+  width: 100%;
+  height: 350px;
+  display: flex;
+}
+
+.logosFooter {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mackleaps {
+  display: flex;
+}
+
+.alinharNome {
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.mackcloud {
+  display: flex;
+  padding: 15px 0 15px 15px;
+  gap: 15px;
+}
+
+.mackenzie {
+  display: flex;
+  padding: 12px 0 0px 15px;
+}
+
+.apoio {
+  display: flex;
+  padding: 0px 0 0px 15px;
+}
+
+.apoio img {
+  width: 250px;
+  height: 50px;
+}
+
+.contatoFooter {
+  width: 33%;
+  color: white;
+  padding: 20px 0 0 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mapaFooter {
+  width: 33%;
+  padding-top: 15px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.mapaFooter img {
+  height: 250px;
+  width: 300px;
+  border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+  /* ---------- Header ---------- */
+  nav {
+    display: none;
+  }
+  #hamburguer {
+    display: flex;
+  }
+
+  .menuHamburguerOpen {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    right: 0%;
+    overflow-y: hidden;
+    transition: 300ms;
+  }
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    margin: 20px;
+  }
+  .menu-icon {
+    display: flex;
+    align-self: flex-end;
+    padding: 10px;
+  }
+  #subscribe {
+    width: 120px;
+    height: 30px;
+  }
+
+  #titulo {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: bolder;
+    line-height: normal;
+  }
+  .conteudoHeader img {
+    height: 100px;
+    width: 100px;
+  }
+
+  .textoHeader {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 12px;
+    width: 498px;
+  }
+  /* ---------- Sobre nós --------- */
+
+  /* ---------- Data Science e IHC ---------- */
+
+  .conteudoDSIHC h1 {
+    font-size: 25px;
+  }
+
+  .conteudoDSIHC span {
+    font-size: 17px;
+  }
+
+  /*imagem*/
+  #mackenzie_frente img {
+    display: none;
+  }
+  /* horario */
+  /* ---------- horario ---------- */
+
+  .edicoesAnteriores {
+    padding: 40px 0 40px 0;
+    background-color: #84adec35;
+    
+  }
+
+  .edicoesAnteriores h1 {
+    color: #00296b;
+    font-size: 48px;
+    font-weight: bold;
+  }
+
+  .edAntText {
+    display: flex;
+    flex-direction: column;
+
+    
+    gap: 15px;
+    padding-bottom: 3%;
+  }
+
+  .Container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    padding: 0;
+    border: 1px red solid;
+  }
+
+  .horario {
+    background-color: #00296b;
+    color: white;
+    border-radius: 19px;
+    height: 168px;
+    width: 200px;
+    border-radius: 20px;
+    padding: 50px;
+    
+    align-items: center;
+  }
+
+  .horario p {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .descricao {
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 40px 0 40px 0;
+  }
+  .descricao h2 {
+    font-size: 25px;
+  }
+  .descricao h3 {
+    font-size: 15px;
+  }
+
+  .descricao p {
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    padding: 0px 20px 0px 20px;
+  }
+
+  .Container-dois {
+    margin-top: 3%;
+    padding-left: 50px;
+    display: block;
+    align-items: center;
+  }
+
+  .descricao-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 50px;
+    width: 200px;
+    border-radius: 20px;
+    margin-right: 50px;
+    padding: 40px 0 40px 0;
+  }
+  /* ---------- Edições anteriores ---------- */
+
+  .edicoesAnteriores h1 {
+    font-size: 25px;
+  }
+
+  .conteudoEdAnt {
+    width: 90%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .edAntText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .edAntText span {
+    font-size: 17px;
+  }
+
+  .areaCard {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding: 20px 0 20px 0;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 325px;
+    height: 450px;
+    background-color: rgb(202, 204, 209);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  .cardOrganização-2 {
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    width: 600px;
+    height: 851px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 4px 4px 4px 4px rgba(0.25, 0.25, 0.25, 0.25);
+  }
+
+  .card img {
+    width: 325px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .card button {
+    background-color: #00296b;
+    border-radius: 19px;
+    color: white;
+    width: 160px;
+    height: 38px;
+    cursor: pointer;
+    border: none;
+    font-size: 15px;
+  }
+  .card button:hover {
+    opacity: 70%;
+    transition: 300ms;
+  }
+  .alinharBotao {
+    margin-top: 20px;
+    width: 90%;
+  }
+
+  .textoCard {
+    width: 90%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  /* historia */
+
+  .cardTEXTO-2 {
+  
+    text-align: center;
+    display: flexbox;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    width: 1000px;
+    height: 951px;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    box-shadow: 4px 4px 4px 4px rgba(0.25, 0.25, 0.25, 0.25);
+    padding: 10px 10px 10px 30px;
+    border: 1px red solid;
+  }
+  
+  .cardTxtDiv-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+  }
+  
+  .cardTEXTO-3{
+    
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    width: 1000px;
+    height: 251px;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    box-shadow: 4px 4px 4px 4px rgba(0.25, 0.25, 0.25, 0.25);
+    padding: 10px 10px 10px 30px;
+    border: 1px red solid;
+  }
+
+  /* --------- Organização --------- */
+
+  #tituloOrganizacao {
+    font-size: 25px;
+  }
+
+  /* ---------- Footer ---------- */
+  footer {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+  footer h2 {
+    display: none;
+  }
+
+  .logosFooter {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .contatoFooter {
+    width: 100%;
+    font-size: 10px;
+    gap: 10px;
+  }
+
+  .mapaFooter {
+    width: 100%;
+    padding: 10px;
+    font-size: 12px;
+    gap: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+  }
+  .apoio {
+    display: flex;
+    display: none;
+  }
+
+  .mapaFooter img {
+    display: none;
+  }
+}
